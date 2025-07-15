@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Img/favicon-04.svg">
+    <title>SAHO商合系統科技</title>
+    <link href="CSS/login.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <script src="JS/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand-logo"></div>
+        <div class="brand-title"></div>
+        <h3>歡迎使用 商合多元管理平台</h3>
+        <div class="inputs">
+            <label>帳號</label>
+            <input class="lgin" type="text" placeholder="" />
+            <label>密碼</label>
+            <input class="lgin" type="password" />
+            <div id="stus">
+                <a href="#">沒有帳戶?</a>
+                <a href="#">
+                    <span id="visi_off" class="material-symbols-outlined" title="隱藏密碼">
+                        visibility_off
+                    </span>
+                    <span id="visi" class="material-symbols-outlined" title="顯示密碼">
+                        visibility
+                    </span>
+                </a>
+            </div>
+            <button type="submit" onclick="location.href='index.html'"><span>登入</span>
+                <span class="material-symbols-outlined">
+                    arrow_forward
+                </span>
+            </button>
+        </div>
+    </div>
+    <!-- 版權宣告 -->
+    <div id="copyrightWrap">
+        <span>系統建議使用<img src="Img/ie_10.png" alt="Intermet Explorer" title="Intermet Explorer"><span class="ie">10</span>或 以上版本</span>
+        <span>SST 商合系統科技 ©Copyright All Rights Reserved.</span>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('#visi').hide();
+    })
+    $("#visi_off").click(function() {
+        $("#visi_off").hide();
+        $("#visi").show();
+    });
+    $("#visi").click(function() {
+        $("#visi").hide();
+        $("#visi_off").show();
+    });
+    </script>
+</body>
+
+</html>

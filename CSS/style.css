@@ -1,0 +1,60 @@
+
+.pie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.data-path:hover {
+  cursor: pointer;
+}
+
+.data-text {
+  transition: transform 0.2s ease-in-out;
+  fill: #8C8C8C;
+}
+.data-text__value {
+  font-size: 5rem;
+  transform: translateY(-0.5rem);
+  opacity: 0;
+}
+.data-text__name {
+  font-size: 2rem;
+  transform: translateY(0.5rem);
+  opacity: 0;
+}
+.data-text--show {
+  transform: translateY(0);
+  -webkit-animation: fadeGraphTextIn 0.5s forwards;
+          animation: fadeGraphTextIn 0.5s forwards;
+}
+.data-text:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.legend-text {
+  fill: #8C8C8C;
+  font-size: 1.3em;
+}
+
+@-webkit-keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeGraphTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,204 @@
+<h1><span class="material-symbols-outlined">handyman</span><span>UI LIST</span></h1>
+<table class="tb-base">
+    <tr>
+        <th class="cb-w-checkbox"><span class="cb"><input type="checkbox" onclick="toggle(this);" /></span></th>
+        <th class="cb-w-avatar"><span>卡片密碼</span>
+            <span class="material-symbols-outlined thIcon">visibility_off</span></th>
+        <th>編號</th>
+        <th class="cb-w-name">姓名</th>
+        <th>在職</th>
+        <th>卡片權限</th>
+        <th>打卡區<i class="fa-solid fa-filter"></i></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" checked="checked" /></span></td>
+        <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>高雄<a href="#" class="numCircle">2</a></td>
+        <td>
+            <div class="machine">
+                <img src="Img/type/ADM100.png" alt="">
+                <span class="type">ADM100FP</span>
+                <span class="num">C001</span>
+            </div>
+        </td>
+        <td>
+            <!-- 狀態變更 -->
+            <div class="button b2" id="button-14">
+                <input type="checkbox" class="checkbox" />
+                <div class="knobs">
+                    <span></span>
+                </div>
+                <div class="layer"></div>
+            </div>
+        </td>
+        <td><a href="#" class="gray" title="備註"><span class="material-symbols-outlined font-xl">text_snippet</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+                    view_comfy_alt
+                </span></a>
+            <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <input id="password" type="password" placeholder="請輸入密碼"></input>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<!-- 表格狀態列 -->
+<h1 class="intro"><span class="material-symbols-outlined">handyman</span><span>表格狀態列</span></h1>
+<div class="wrap">
+    <table class="tb-base">
+        <tr>
+            <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">
+                        check_circle
+                    </span></a></td>
+            <td><a class="statusIcon stop" href="#" title="停用">
+                    <span class="material-symbols-outlined nocheck">cancel</span></a>
+            </td>
+            <td><a class="statusIcon nocheckfill" href="#" title="停用">
+                    <span class="material-symbols-outlined nocheck">cancel</span></a>
+            </td>
+            <td><a class="statusIcon nocheck" href="#" title="停用">
+                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                </a></td>
+            <td><a class="statusIcon stop02" href="#" title="無需設碼">
+                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                </a></td>
+            <td><a class="statusIconNm icon01" href="" title="歷史紀錄">
+                    <span class="material-symbols-outlined">source_notes</span>
+                    <span class="num">18</span>
+                </a>
+            </td>
+            <td><button type="button" class="btn-ON">ON</button></td>
+            <td><button type="button" class="btn-OFF">OFF</button></td>
+            <td><button type="button" class="btn-control open">開放</button></td>
+            <td width="80px"><button onclick="btnStatus()" type="button" class="btn-control">管制</button>
+                <!-- 下拉選單 -->
+                <div id="panelbtnSatus">
+                    <ul class="usrMenu">
+                        <li>
+                            <button type="button" class="btn-control open">開放</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-control stop">禁止</button>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td><button type="button" class="btn-control stop">禁止</button></td>
+            <td><i class="on"></i><span class="txt">台北指紋機</span></td>
+            <td><i class="off"></i><span class="txt">自動門出</span></td>
+            <td><a href="#"><span class="material-symbols-outlined font-xl blue">tune</span></a></td>
+            <td><a href="#" class="gray" title="備註"><span class="material-symbols-outlined font-xl">text_snippet</span></a></td>
+            <td>
+                <!-- 狀態變更 -->
+                <div class="button b2" id="button-14">
+                    <input type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                        <span></span>
+                    </div>
+                    <div class="layer"></div>
+                </div>
+                <!-- 狀態變更 -->
+                <div class="button b2 gray" id="button-14">
+                    <input type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                        <span></span>
+                    </div>
+                    <div class="layer"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#" class="btn-borrow">待用</a> 
+            </td>
+            <td>
+                <a href="#" class="btn-borrow red">逾期</a>
+            </td>
+            <td>
+                <a href="#" class="btn-borrow orange">出借中</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<!-- 表格編輯功能 -->
+<h1 class="intro"><span class="material-symbols-outlined">handyman</span><span>表格編輯功能</span></h1>
+<div class="wrap">
+    <table class="tb-base">
+        <tr>
+            <td class="function funshow">
+                <a href="#" class="more" title="新增權限"><span class="material-symbols-outlined">
+                        add
+                    </span></a>
+            </td>
+            <td class="function funshow">
+                <a href="#" class="more" title="複製權限"><span class="material-symbols-outlined">
+                        file_copy
+                    </span></a>
+            </td>
+            <td class="function funshow">
+                <a href="#" class="more" title="更多"><span class="material-symbols-outlined">view_comfy_alt</span></a>
+            </td>
+            <td class="function funshow">
+                <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+            </td>
+            <td><a class="link">200</a></td>
+        </tr>
+    </table>
+</div>
+<!-- 表格圖文資訊 -->
+<h1 class="intro"><span class="material-symbols-outlined">handyman</span><span>表格圖文資訊</span></h1>
+<div class="wrap">
+    <table class="tb-base tbuitools">
+        <tr>
+            <td class="cb-w-mc">
+                <div class="machine">
+                    <img src="Img/type/ADM100.png" alt="">
+                    <span class="type">ADM100FP</span>
+                    <span class="num">C001</span>
+                </div>
+            </td>
+            <td class="cb-w-mc">
+                <div class="machine">
+                    <img src="Img/type/SR710.png" alt="">
+                    <span class="type">SR710</span>
+                    <span class="num">C002</span>
+                </div>
+            </td>
+            <td class="cb-w-mc">
+                <div class="machine">
+                    <img src="Img/type/SR5500.png" alt="">
+                    <span class="type">SR5500</span>
+                    <span class="num">C003</span>
+                </div>
+            </td>
+            <td>高雄<a href="#" class="numCircle">2</a></td>
+            <td>台北指紋機<a href="#" class="numCircle">18</a></td>
+            <td></td>
+        </tr>
+    </table>
+</div>

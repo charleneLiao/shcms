@@ -1,0 +1,15 @@
+# 不要上傳 node_modules
+node_modules/
+
+# 不要上傳 build 出來的靜態檔案
+dist/
+.sass-cache
+# 編譯暫存、快取檔案
+*.log
+.DS_Store
+
+# VS Code 設定檔
+.vscode/
+
+Deta
+SASS

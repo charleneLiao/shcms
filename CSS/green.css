@@ -1,0 +1,22 @@
+/* line 5, ../SASS/green.scss */
+.mdtp__wrapper[data-theme='blue'] .mdtp__time_holder {
+  background-color: #689edb;
+}
+/* line 8, ../SASS/green.scss */
+.mdtp__wrapper[data-theme='blue'] .mdtp__clock .mdtp__am.active,
+.mdtp__wrapper[data-theme='blue'] .mdtp__clock .mdtp__pm.active,
+.mdtp__wrapper[data-theme='blue'] .mdtp__clock .mdtp__clock_dot {
+  background-color: #689edb;
+}
+/* line 13, ../SASS/green.scss */
+.mdtp__wrapper[data-theme='blue'] .mdtp__clock .mdtp__digit.active span, .mdtp__wrapper[data-theme='blue'] .mdtp__clock .mdtp__digit:not(.digit--disabled) span:hover {
+  background-color: #689edb !important;
+}
+/* line 18, ../SASS/green.scss */
+.mdtp__wrapper[data-theme='blue'] .mdtp__clock .mdtp__digit.active:before {
+  background-color: #689edb;
+}
+/* line 22, ../SASS/green.scss */
+.mdtp__wrapper[data-theme='blue'] .mdtp__button {
+  color: #689edb;
+}

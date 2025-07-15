@@ -1,0 +1,323 @@
+<h1><i class="fa-sharp fa-solid fa-people-group fa-beat"></i><span>人員資料</span></h1>
+<h2>24<span>筆</span></h2>
+<h2 class="ok">3<span>開放</span></h2>
+<h2 class="ok">6<span>連線</span></h2>
+<h2 class="ng">12<span>管制</span></h2>
+<h2 class="ng">9<span>斷線</span></h2>
+<h2 class="nm">1<span>禁止</span></h2>
+<!--------------------- 多功能列 --------------------->
+<div id="multifun">
+    <!-- ADD -->
+    <a title="新增人員" href="#" class="btn btn-mtfAdd">
+        <span class="material-symbols-outlined">add</span>
+    </a>
+    <!-- 匯入 -->
+    <a title="匯入組織" href="#" class="btn btn-mtfimport">
+        <span class="material-symbols-outlined">database</span>
+    </a>
+    <!-- Search -->
+    <div class="srchbox">
+        <form name="search">
+            <input type="text" class="input" name="txt" placeholder="編號or名稱..." autocomplete="off" onmouseout="this.value = ''; this.blur();">
+        </form>
+        <i class="fas fa-search"></i>
+    </div>
+</div>
+<table class="tb-base">
+    <tr>
+        <th class="cb-w-checkbox"><span class="cb"><input type="checkbox" onclick="toggle(this);" /></span></th>
+        <th class="cb-w-avatar">頭像</th>
+        <th class="cb-w-num">編號</th>
+        <th class="cb-w-Cardnum">卡片號碼</th>
+        <th class="cb-w-name">姓名</th>
+        <th class="cb-w-dep">部門<i class="fa-solid fa-filter"></i></th>
+        <th class="cb-w-dep">職稱<i class="fa-solid fa-filter"></i></th>
+        <th class="cb-w-icon">在職<i class="fa-solid fa-filter"></i></th>
+        <th>類別<i class="fa-solid fa-filter"></i></th>
+        <th>班別<i class="fa-solid fa-filter"></i></th>
+        <th>打卡區<i class="fa-solid fa-filter"></i></th>
+        <th>卡片權限<i class="fa-solid fa-filter"></i></th>
+        <th>手機功能<i class="fa-solid fa-filter"></i></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" checked="checked" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6stvwhG_mn-guMJ5YFGqrWgjq74P-ufu1Gw&usqp=CAU">
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>171001</td>
+        <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" checked="checked" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPDdYzeDEqBDjxm4V09hopbjzliseZ3sYKqg&usqp=CAU">
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+        <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon stop" href="#" title="停用"><span class="material-symbols-outlined nocheck">cancel</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <img src="Img/aaa/avatar05.jpg">
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td><span class="dep">D5000</span></td>
+       <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <img src="Img/aaa/avatar04.jpg" alt="">
+                    <span class="icon exist"></span>
+                </div>
+            </div>
+        </td>
+        <td><span class="dep">T01T</span></td>
+        <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-OFF">OFF</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon stop" href="#" title="停用"><span class="material-symbols-outlined nocheck">cancel</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <span class="defaultman">國</span>
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+        <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon stop" href="#" title="停用"><span class="material-symbols-outlined nocheck">cancel</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <img src="Img/aaa/avatar03.jpg" alt="">
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+       <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <span class="defaultfemale orange01">鴻</span>
+                    <span class="icon exist"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+       <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-OFF">OFF</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" checked="checked" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <span class="defaultfemale green01">蘭</span>
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+       <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <span class="defaultfemale blue02">強</span>
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+       <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-OFF">OFF</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td><span class="cb"><input type="checkbox" /></span></td>
+        <td>
+            <div id="avatarWrap">
+                <div class="profile">
+                    <span class="defaultfemale pink02">頤</span>
+                    <span class="icon"></span>
+                </div>
+            </div>
+        </td>
+        <td>00171001</td>
+        <td>00171001</td>
+        <td><span class="cn">倪惠玲</span><span class="en">jisoo</span></td>
+        <td>研發系統<span class="en">D5000</span></td>
+        <td>軟體工程師</td>
+        <td><button type="button" class="btn-ON">ON</button></td>
+        <td>員工<span class="en">E</span></td>
+        <td>正常班</td>
+        <td>台北</td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td><a class="statusIcon check" href="#" title="啟用"><span class="material-symbols-outlined">check_circle</span></a></td>
+        <td class="function">
+            <a href="#" class="more" title="更多"><span class="material-symbols-outlined">
+view_comfy_alt
+</span></a>
+             <a href="#" class="del"><span class="material-symbols-outlined">delete</span></a>
+        </td>
+    </tr>
+</table>
